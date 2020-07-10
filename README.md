@@ -1,6 +1,6 @@
 # Book 4: React
 
-Learning React by building a single page app for an animal kennel following the steps in the chapters located https://github.com/nashville-software-school/client-side-mastery/tree/master/book-4-the-apprentice
+Learning React by building a single page app for an animal kennel following the steps in the chapters located at https://github.com/nashville-software-school/client-side-mastery/tree/master/book-4-the-apprentice
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

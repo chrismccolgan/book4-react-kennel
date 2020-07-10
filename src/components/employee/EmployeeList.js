@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import EmployeeCard from './EmployeeCard';
 import EmployeeManager from '../../modules/EmployeeManager';
 
-const EmployeeList = () => {
+const EmployeeList = (props) => {
   // The initial state is an empty array
   const [employees, setEmployees] = useState([]);
 
@@ -27,6 +27,16 @@ const EmployeeList = () => {
 
   // Finally we use map() to "loop over" the employees array to show a list of employee cards
   return (
+    <>
+
+    <section className="section-content">
+    <button type="button"
+        className="btn"
+        onClick={() => {props.history.push("/employees/new")}}>
+        New Employee
+    </button>
+    </section>
+
     <div className="container-cards">
       {employees.map(employee =>
         <EmployeeCard
@@ -34,6 +44,7 @@ const EmployeeList = () => {
           employee={employee}
           deleteEmployee={deleteEmployee} />)}
     </div>
+    </>
   );
 };
 

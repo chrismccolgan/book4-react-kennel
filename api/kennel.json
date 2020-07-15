@@ -2,29 +2,45 @@
   "animals": [
     {
       "id": 1,
-      "name": "Doodles",
-      "breed": "Poodle"
+      "name": "Dizzie",
+      "breed": "Maltese",
+      "employeeId": 1
     },
     {
       "id": 2,
       "name": "Decker",
-      "breed": "German Shepherd"
+      "breed": "German Shepherd",
+      "employeeId": 1
     },
     {
       "id": 3,
-      "name": "esme",
-      "breed": "Pitbull"
+      "name": "Esme",
+      "breed": "Pitbull",
+      "employeeId": 2
     },
     {
       "name": "Stinky",
       "breed": "Cute",
-      "id": 4
+      "id": 4,
+      "employeeId": 3
+    },
+    {
+      "id": 5,
+      "name": "Oscar",
+      "breed": "Weenie",
+      "employeeId": 4
+    },
+    {
+      "id": 6,
+      "name": "Test",
+      "breed": "Test",
+      "employeeId": "2"
     }
   ],
   "owners": [
     {
       "id": 1,
-      "name": "Sandy",
+      "name": "Chris",
       "phoneNumber": "931-249-0000"
     },
     {
@@ -50,11 +66,6 @@
       "state": "TN"
     },
     {
-      "id": 2,
-      "city": "Clarksville",
-      "state": "TN"
-    },
-    {
       "id": 3,
       "city": "Knoxville",
       "state": "TN"
@@ -63,28 +74,37 @@
       "city": "Franklin",
       "state": "TN",
       "id": 4
+    },
+    {
+      "city": "Test",
+      "state": "NY",
+      "id": 5
     }
   ],
   "employees": [
     {
       "id": 1,
-      "name": "Baby",
-      "phoneNumber": "333-339-0000"
+      "name": "Baby Baby",
+      "phoneNumber": "333-339-0000",
+      "locationId": 1
     },
     {
       "id": 2,
       "name": "Two",
-      "phoneNumber": "222-222-2222"
+      "phoneNumber": "222-222-2222",
+      "locationId": 2
     },
     {
       "id": 3,
       "name": "Three",
-      "phoneNumber": "333-333-3330"
+      "phoneNumber": "333-333-3330",
+      "locationId": 1
     },
     {
       "name": "Test",
       "phoneNumber": "999-999-9999",
-      "id": 4
+      "id": 4,
+      "locationId": 1
     }
   ]
 }

@@ -41,7 +41,9 @@ const OwnerList = (props) => {
             <OwnerCard
                 key={owner.id}
                 owner={owner}
-                deleteOwner={deleteOwner} />)}
+                deleteOwner={deleteOwner}
+                {...props}
+                />)}
     </div>
     </>
   );

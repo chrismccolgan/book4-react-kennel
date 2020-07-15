@@ -14,10 +14,9 @@ const AnimalCard = props => {
           {firstLetterCase(props.animal.name)}
         </span></h3>
         <p>Breed: {props.animal.breed}</p>
+        <Link to={`/animals/${props.animal.id}`}><button>Details</button></Link>
+        <button type="button" onClick={() => props.history.push(`/animals/${props.animal.id}/edit`)}>Edit</button>
         <button type="button" onClick={() => props.deleteAnimal(props.animal.id)}>Discharge</button>
-        <Link to={`/animals/${props.animal.id}`}>
-          <button>Details</button>
-        </Link>
       </div>
     </div>
   );

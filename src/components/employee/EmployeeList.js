@@ -29,21 +29,23 @@ const EmployeeList = (props) => {
   return (
     <>
 
-    <section className="section-content">
-    <button type="button"
-        className="btn"
-        onClick={() => {props.history.push("/employees/new")}}>
-        New Employee
-    </button>
-    </section>
+      <section className="section-content">
+        <button type="button"
+          className="btn"
+          onClick={() => { props.history.push("/employees/new") }}>
+          New Employee
+        </button>
+      </section>
 
-    <div className="container-cards">
-      {employees.map(employee =>
-        <EmployeeCard
-          key={employee.id}
-          employee={employee}
-          deleteEmployee={deleteEmployee} />)}
-    </div>
+      <div className="container-cards">
+        {employees.map(employee =>
+          <EmployeeCard
+            key={employee.id}
+            employee={employee}
+            deleteEmployee={deleteEmployee}
+            {...props}
+          />)}
+      </div>
     </>
   );
 };
